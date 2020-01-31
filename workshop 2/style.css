@@ -1,0 +1,116 @@
+/**
+  NORMALIZE HTML AND SET DEFAULT VALUES
+*/
+
+html {
+	box-sizing: border-box;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+	font-family: inherit;
+}
+
+body {
+	font-size: 62.5%;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #414749;
+}
+
+.text-important {
+	font-size: 32px;
+	font-weight: 700;
+}
+
+/* STYLES HSL(203,15%,47%)*/
+main {
+	background: #eaedee;
+	min-height: 100vh;
+	display: flex;
+	padding: 0 5rem;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 1.2rem;
+	line-height: 2rem;
+}
+
+.subscription__header {
+	padding: 1rem 0;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	border-bottom: 1px solid #c9cfd3;
+}
+.subscription__header > * {
+	max-width: 40%;
+}
+
+.subscription__header p {
+	font-size: 0.9rem;
+}
+
+.subscription__header h3 {
+	font-weight: 400;
+}
+
+.subscription__form {
+	padding: 1.5rem 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.subscription__form > * {
+	width: 48%;
+}
+
+.subscription__form form > div {
+	margin-bottom: 1.5rem;
+}
+
+.subscription__form form input {
+	width: 100%;
+	background: #fff;
+	padding: 1rem 0.8rem;
+	font-size: 1.1rem;
+	border-radius: 7px;
+	border: none;
+}
+
+.subscription__form form input::placeholder {
+	color: #c5cbce;
+}
+
+.subscription__form form button {
+	width: 100%;
+	padding: 1.3rem;
+	background: #5759d1;
+	color: #fff;
+	border: none;
+	border-radius: 7px;
+}
+
+.subscription__form .bill {
+	border-radius: 7px;
+	background: #fff;
+	margin-bottom: 1.5rem;
+	padding: 1rem 1.2rem;
+}
+
+.subscription__form .bill.active {
+	border: 2px solid #afb0e6;
+}
+
+.subscription__form .bill h5 {
+	color: #8a979b;
+	font-size: 0.9rem;
+}
+
+.subscription__form .bill > div {
+	display: flex;
+	justify-content: space-between;
+}
